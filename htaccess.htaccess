@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^mediashare.ml [NC]
+RewriteRule ^(.*)$ http://www.mediashare.ml/$1 [L,R=301]
